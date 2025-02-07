@@ -15,6 +15,12 @@ addFriend = () => {
     updateFriendList();
 }
 
+handleKeyPressAddFriend = (event) => {
+  if (event.key === 'Enter') {
+      addFriend();
+  }
+}
+
 updateFriendList = () => {
     const listElement = document.getElementById('friendList');
     listElement.innerHTML = '';
