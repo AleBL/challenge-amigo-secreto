@@ -15,3 +15,13 @@ addFriend = () => {
     updateFriendList();
 }
 
+updateFriendList = () => {
+    const listElement = document.getElementById('friendList');
+    listElement.innerHTML = '';
+
+    friendList.forEach(friend => {
+        const listItemElement = document.createElement('li');
+        listItemElement.textContent = friend;
+        listElement.appendChild(listItemElement);
+    });
+}
