@@ -31,3 +31,11 @@ updateFriendList = () => {
         listElement.appendChild(listItemElement);
     });
 }
+
+drawFriend = () => {
+    const resultElement = document.getElementById('result');
+    const randomIndex = Math.floor(Math.random() * friendList.length);
+    const randomFriend = friendList[randomIndex];
+
+    resultElement.textContent = randomFriend;
+}
