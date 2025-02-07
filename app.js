@@ -39,3 +39,8 @@ drawFriend = () => {
 
     resultElement.textContent = randomFriend;
 }
+
+resetFriendList = () => {
+    friendList = [];
+    updateFriendList();
+}
